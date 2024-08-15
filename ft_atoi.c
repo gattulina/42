@@ -3,11 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lugattus <lugattus@student.42malaga.com>   +#+  +:+       +#+        */
+/*   By: lugattus <lugattus@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/10 19:23:46 by lugattus          #+#    #+#             */
-/*   Updated: 2024/05/10 19:23:47 by lugattus         ###   ########.fr       */
+/*   Updated: 2024/08/15 19:48:55 by lugattus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
+int	atoi(char *strn)
+{
+	int	res = 0;
+	int i = 0;
+
+	while str[i] != '\0') {
+		i++;
+		res = res * 10 + str[i] - '\0';
+	}
+	return res; 	
+}
