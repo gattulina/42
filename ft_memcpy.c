@@ -6,7 +6,7 @@
 /*   By: lugattus <lugattus@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/19 17:25:44 by lugattus          #+#    #+#             */
-/*   Updated: 2024/05/01 17:24:42 by lugattus         ###   ########.fr       */
+/*   Updated: 2024/08/24 15:03:45 by lugattus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,19 @@
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	char *d = (char *)dst;
-	const char *s = (const char *)src;
-	
-	size_t	i;
+	char		*d;
+	const char	*s;
+	size_t		i;
+
+	d = (char *) dst;
+	s = (const char *) src;
 	i = 0;
 	while (i < n)
 	{
 		d[i] = s[i];
 		i++;
 	}
-	return d;
+	return (d);
 }
 /*
 #include <string.h>
