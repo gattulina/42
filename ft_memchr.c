@@ -6,7 +6,7 @@
 /*   By: lugattus <lugattus@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/10 18:51:28 by lugattus          #+#    #+#             */
-/*   Updated: 2024/08/15 19:12:22 by lugattus         ###   ########.fr       */
+/*   Updated: 2024/08/24 14:11:01 by lugattus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	{
 		if (str[i] == (char) c)
 			return (&str[i]);
-		i++
-		}
-			return (NULL);
+		i++;
 	}
+	return (NULL);
+}

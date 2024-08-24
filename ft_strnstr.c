@@ -3,11 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lugattus <lugattus@student.42malaga.com>   +#+  +:+       +#+        */
+/*   By: lugattus <lugattus@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/10 19:23:29 by lugattus          #+#    #+#             */
-/*   Updated: 2024/05/10 19:23:30 by lugattus         ###   ########.fr       */
+/*   Updated: 2024/08/24 14:12:08 by lugattus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <libft.h>
+
+char *     strnstr(const char *big, const char *little, size_t len);
 

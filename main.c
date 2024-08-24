@@ -63,5 +63,12 @@ int main(void)
 	ret = ft_strtchr(s,c);	
 	printf("my fc: String after %c: is %s, última aparicion", c, ret);
 	printf("strrchr: string after %c is %s", c, strrchr(s,c));
+
+	/*strncmp vs ft_strncmp*/
+	char	*str1 = "una oración";
+	char	*str2 = "otra oracion";
+	printf("my fc: The difference str1&2 is %d", ft_strncmp(str1, str2, 4));
+	printf("strncmp: diff is %d", strncmp(str1, str2, 4));
+
 	return (0);
 }
