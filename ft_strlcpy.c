@@ -6,7 +6,7 @@
 /*   By: lugattus <lugattus@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/01 15:46:33 by lugattus          #+#    #+#             */
-/*   Updated: 2024/05/01 17:20:30 by lugattus         ###   ########.fr       */
+/*   Updated: 2024/09/16 15:51:24 by lugattus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,12 @@
 size_t strlcpy(char * dst, char * src, size_t dstsize)
 {
 	size_t	i;
-	
+
 	i = 0;
 	if (dstsize == 0)
 		while (src[i])
 			i++;
-		return (i);
+	return (i);
 	while (src[i] != '\0' && i < (dstsize - 1))
 /* only copy up to the first nul is reached */
 /* Always copy 1 less then the destination to make room for the nul */

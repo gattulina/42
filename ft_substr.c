@@ -3,11 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lugattus <lugattus@student.42malaga.com>   +#+  +:+       +#+        */
+/*   By: lugattus <lugattus@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/10 19:24:25 by lugattus          #+#    #+#             */
-/*   Updated: 2024/05/10 19:24:26 by lugattus         ###   ########.fr       */
+/*   Updated: 2024/09/16 15:22:10 by lugattus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
+char	*ft_substr(char const *s, unsigned int start, size_t len)
+{
+	
+}

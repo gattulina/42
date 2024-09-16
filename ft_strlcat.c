@@ -6,7 +6,7 @@
 /*   By: lugattus <lugattus@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/10 18:49:47 by lugattus          #+#    #+#             */
-/*   Updated: 2024/05/10 19:00:21 by lugattus         ###   ########.fr       */
+/*   Updated: 2024/09/16 15:51:07 by lugattus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
-	size_t len;
-	size_t slen;
+	size_t	len;
+	size_t	slen;
 
 	len = 0;
 	slen = ft_len(src);
@@ -29,5 +29,5 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 		*dst++ = *src++;
 	if (size == 1 || *src == 0)
 		*dst = '\0';
-	return (slen + len);		
+	return (slen + len);
 }
