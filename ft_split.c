@@ -6,10 +6,10 @@
 /*   By: lugattus <lugattus@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/16 15:43:18 by lugattus          #+#    #+#             */
-/*   Updated: 2024/09/16 15:50:32 by lugattus         ###   ########.fr       */
+/*   Updated: 2024/09/16 18:39:17 by lugattus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-
+char **ft_split(char const *s, char c);

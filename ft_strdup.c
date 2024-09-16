@@ -6,7 +6,7 @@
 /*   By: lugattus <lugattus@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/10 19:24:12 by lugattus          #+#    #+#             */
-/*   Updated: 2024/09/16 15:20:25 by lugattus         ###   ########.fr       */
+/*   Updated: 2024/09/16 16:58:01 by lugattus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@ char	*ft_strdup(const char *s1)
 
 	count = ft_strlen(s1);
 	buffer = (char *)malloc((count + 1) * sizeof(char));
-	if (buffer == 0)
-		rerturn (0);
+	if (buffer == NULL)
+		return (0);
 	else
 	{
 		ft_memcpy(buffer, s1, count + 1);

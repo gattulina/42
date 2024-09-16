@@ -6,10 +6,11 @@
 /*   By: lugattus <lugattus@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/16 15:43:53 by lugattus          #+#    #+#             */
-/*   Updated: 2024/09/16 15:50:41 by lugattus         ###   ########.fr       */
+/*   Updated: 2024/09/16 18:40:23 by lugattus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-
+void ft_striteri(char *s, void (*f)(unsigned int,
+char*))

@@ -6,9 +6,14 @@
 /*   By: lugattus <lugattus@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/16 15:43:41 by lugattus          #+#    #+#             */
-/*   Updated: 2024/09/16 15:51:39 by lugattus         ###   ########.fr       */
+/*   Updated: 2024/09/16 18:40:00 by lugattus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+char	*ft_strmapi(char const *s, char (*f)(unsigned
+int, char))
+{
+	
+}
