@@ -6,10 +6,10 @@
 /*   By: lugattus <lugattus@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/16 15:43:30 by lugattus          #+#    #+#             */
-/*   Updated: 2024/09/16 18:39:32 by lugattus         ###   ########.fr       */
+/*   Updated: 2024/09/16 18:42:17 by lugattus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_itoa(int n);
+char	*ft_itoa(int n);

@@ -6,10 +6,10 @@
 /*   By: lugattus <lugattus@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/16 15:44:10 by lugattus          #+#    #+#             */
-/*   Updated: 2024/09/16 18:40:41 by lugattus         ###   ########.fr       */
+/*   Updated: 2024/09/16 18:42:08 by lugattus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_putchar_fd(char c, int fd);
+void	ft_putchar_fd(char c, int fd);

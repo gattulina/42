@@ -6,10 +6,10 @@
 /*   By: lugattus <lugattus@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/16 15:44:47 by lugattus          #+#    #+#             */
-/*   Updated: 2024/09/16 15:50:19 by lugattus         ###   ########.fr       */
+/*   Updated: 2024/09/16 18:41:56 by lugattus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-
+void	ft_putendl_fd(char *s, int fd);
