@@ -6,13 +6,13 @@
 /*   By: lugattus <lugattus@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/10 16:20:25 by lugattus          #+#    #+#             */
-/*   Updated: 2024/05/01 17:24:28 by lugattus         ###   ########.fr       */
+/*   Updated: 2024/09/17 18:22:22 by lugattus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strlen(char *x)
+size_t	ft_strlen(const char *x)
 {
 	int	i;
 
