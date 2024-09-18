@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lugattus <lugattus@student.42.fr>          +#+  +:+       +#+        */
+/*   By: lgattuso <lgattuso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/19 17:25:44 by lugattus          #+#    #+#             */
-/*   Updated: 2024/08/24 15:03:45 by lugattus         ###   ########.fr       */
+/*   Updated: 2024/09/18 17:45:56 by lgattuso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	const char	*s;
 	size_t		i;
 
+	if (!dst && !src && n > 0)
+		return (NULL);
 	d = (char *) dst;
 	s = (const char *) src;
 	i = 0;
