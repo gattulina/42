@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lugattus <lugattus@student.42.fr>          +#+  +:+       +#+        */
+/*   By: lgattuso <lgattuso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/10 16:20:25 by lugattus          #+#    #+#             */
-/*   Updated: 2024/09/17 18:22:22 by lugattus         ###   ########.fr       */
+/*   Updated: 2024/09/18 10:51:14 by lgattuso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,11 @@ size_t	ft_strlen(const char *x)
 	return (i);
 }
 /*#include <stdio.h>
+#include <string.h>
+
 int main(void)
 {
-    printf("%d", ft_strlen("hola"));
+    printf("%zu\n", ft_strlen("hola"));
+	printf("%lu\n", strlen("hola"));
     return(0);
 }*/

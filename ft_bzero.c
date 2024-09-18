@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lugattus <lugattus@student.42.fr>          +#+  +:+       +#+        */
+/*   By: lgattuso <lgattuso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 15:49:03 by lugattus          #+#    #+#             */
-/*   Updated: 2024/05/01 17:25:08 by lugattus         ###   ########.fr       */
+/*   Updated: 2024/09/18 12:53:01 by lgattuso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	ft_memset(s, '0', n);
+	ft_memset(s, 0, n);
 }
 /* 
 int main(void)

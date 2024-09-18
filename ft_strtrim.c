@@ -3,31 +3,39 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lugattus <lugattus@student.42.fr>          +#+  +:+       +#+        */
+/*   By: lgattuso <lgattuso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/16 15:43:02 by lugattus          #+#    #+#             */
-/*   Updated: 2024/09/17 18:52:58 by lugattus         ###   ########.fr       */
+/*   Updated: 2024/09/18 11:36:51 by lgattuso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	get_first_position(char const *str)
-{
-	int	i;
-
-	i = 0;
-	while (is_white_space(str[i]))
-		i += 1;
-	return (i);
-}
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	size_t i;/*unsigned int?*/
-	char	*buffer;
+	size_t	i;
 
-	if (!buffer)
+	i = 0;
+	if (!s1 || !set)
 		return (0);
-	while (s[i] == ' ' || s[i] == '\t' || s[i] == '\n');
-		i++; //is white space
+	while (ft_strchr(set, *s1) && s1[i] != '\0')
+		s1++;
+	i = ft_strlen((char *)s1);
+	while (ft_strchr(set, s1[i]) && i != 0)
+		i--;
+	return (ft_substr((char *)s1, 0, i + 1));
 }
+
+/*#include <stdio.h>
+
+int	main(void)
+{
+	char	*str;
+	char	*set;
+
+	str = " holo ";
+	set = ".";
+	printf("ft_ result: %s", ft_strtrim(str, set));
+	return (0);
+}*/

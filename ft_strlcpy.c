@@ -3,34 +3,46 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lugattus <lugattus@student.42.fr>          +#+  +:+       +#+        */
+/*   By: lgattuso <lgattuso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/01 15:46:33 by lugattus          #+#    #+#             */
-/*   Updated: 2024/09/16 15:51:24 by lugattus         ###   ########.fr       */
+/*   Updated: 2024/09/18 10:48:05 by lgattuso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t strlcpy(char * dst, char * src, size_t dstsize)
+size_t	ft_strlcpy(char *dst, const char *src, size_t n)
 {
 	size_t	i;
 
 	i = 0;
-	if (dstsize == 0)
-		while (src[i])
-			i++;
-	return (i);
-	while (src[i] != '\0' && i < (dstsize - 1))
-/* only copy up to the first nul is reached */
-/* Always copy 1 less then the destination to make room for the nul */
+	while (src[i] != '\0')
+		i++;
+	if (n == 0)
+		return (i);
+	i = 0;
+	while (i < n - 1 && src[i] != '\0')
 	{
 		dst[i] = src[i];
 		i++;
 	}
-	if (i < dstsize)
-		dst[i] = '\0'; /*nul terminate the string */
+	if (i < n)
+		dst[i] = '\0';
 	while (src[i] != '\0')
 		i++;
-	return (i); /*Return the number of bytes copied */
+	return (i);
 }
+
+/*#include <stdio.h>
+#include <string.h>
+int	main(void)
+{
+	char	*src = "22";
+	char	dest[15];
+
+	printf("%zu\n", ft_strlcpy(dest, src, sizeof(dest)));
+	printf("%zu\n", strlcpy(dest, src, sizeof(dest)));
+	return (0);
+}
+*/

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lugattus <lugattus@student.42.fr>          +#+  +:+       +#+        */
+/*   By: lgattuso <lgattuso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/10 19:23:46 by lugattus          #+#    #+#             */
-/*   Updated: 2024/08/24 18:09:57 by lugattus         ###   ########.fr       */
+/*   Updated: 2024/09/18 13:27:58 by lgattuso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,27 +14,28 @@
 
 int	ft_atoi(const char *str)
 {
-	int	sum;
-	int	sign;
-	int	found;
+	unsigned int	i;
+	int				res;
+	int				sign;
 
-	sum = 0;
+	i = 0;
+	res = 0;
 	sign = 1;
-	found = 1;
-	while (*str == ' ' || *str == '\t' || *str == '\n'
-		|| *str == '\f' || *str == '\r')
-		str++;
-	if (*str == '-')
-		sign = -1;
-	if (*str == '-' || *str == '+')
-		str++;
-	while (*str && found)
+	while (str[i] == ' ' || (str[i] >= '\t' && str[i] <= '\r'))
+		i++;
+	if (str[i] == '-')
 	{
-		if (*str >= '0' && *str <= '9')
-			sum = sum * 10 + *str - '0';
-		else
-			found = 0;
-		str++;
+		sign = -1;
+		i++;
 	}
-	return (sign * sum);
+	else if (str[i] == '+')
+		i++;
+	while (str[i] == '+' || str[i] == '-')
+		break ;
+	while ((str[i] != '\0') && (str[i] >= '0' && str[i] <= '9'))
+	{
+		res = (res * 10) + (str[i] - '0');
+		i++;
+	}
+	return (res * sign);
 }
