@@ -49,8 +49,12 @@ char	*ft_itoa(int n);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 void	ft_putchar_fd(char c, int fd);
+/*toma el caracter c y lo escribe en un archivo indicado por el descriptor de archivo fd*/
 void	ft_putstr_fd(char *s, int fd);
+/*toma una cadena s y la escribe en el archivo x descriptor de archivo fd, seguida de un caracter de nueva linea*/
 void	ft_putendl_fd(char *s, int fd);
+/*toma un numero entero n y lo escribe en el archiv indicado x fd. maneje numeros negativos y el valor minimo de un entero con signo en c*/
 void	ft_putnbr_fd(int n, int fd);
+/*envia el numero n al file descriptor*/
 
 #endif
